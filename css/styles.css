@@ -1,0 +1,283 @@
+.project-week3 {
+          background: linear-gradient(
+            180.1deg,
+            rgb(3, 0, 2) 20.8%,
+            rgb(194, 50, 50) 62.7%,
+            rgb(255, 175, 123) 97.2%
+          );
+          width: 70%;
+          padding: 20px 60px;
+          margin: 0 auto;
+          border-radius: 30px;
+          border: 5px outset #f3976d;
+        }
+
+        h1 {
+          margin: 50px 0 0;
+          text-align: center;
+          color: #f9e3d1;
+          font-size: 50px;
+          font-family: "Stick No Bills", sans-serif;
+          text-shadow: 0 0 0.2em rgb(9, 2, 0), 0 0 0.2em rgb(232, 161, 150);
+        }
+
+        h2 {
+          text-align: center;
+          color: #f9e3d1;
+          font-size: 30px;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          margin-top: 5px;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+          line-height: 40px;
+        }
+
+        h3 {
+          text-align: center;
+          color: #f9e3d1;
+          font-size: 50px;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+
+        hr {
+          width: 100%;
+        }
+
+        a{
+          text-decoration: none;
+        }
+
+        button{
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+          border: 2px outset #f9e3d1;
+          background: #D9624E;
+          color: #f9e3d1;
+          font-size: 30px;
+          line-height: 22px;
+          padding: 24px 24px;
+          border-radius: 30px;
+          transition: all 200ms ease;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+          cursor: pointer;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+
+        button:hover{
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+          border: 2px outset #f9e3d1;
+          background: rgb(3, 0, 2, 0.5);
+          color: #f9e3d1;
+          font-size: 30px;
+          line-height: 22px;
+          padding: 24px 24px;
+          border-radius: 30px;
+          transition: all 200ms ease;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+          cursor:pointer;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+
+        .spotify-list {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .main-content{
+        background-color: rgb(3, 0, 2, 0.4);
+        margin: 50px auto;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+        .gif-rock{
+          margin:50px;
+          border-radius: 30px;
+          flex: 1 1 0;
+          margin: 50px;
+          width: 45%;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+          border: 3px outset #f9e3d1; border-radius: 30px"
+      }
+
+        .history-text {
+          text-align: justify;
+          color: #f9e3d1;
+          font-weight: lighter;
+          font-family: "Sono", sans-serif;
+          padding: 30px;
+          width: 45%;
+          flex: 1 1 0;
+          line-height: 25px;
+
+        }
+
+
+        .info-source {
+          color: #f9e3d1;
+          font-weight: lighter;
+          font-family: "Sono", sans-serif;
+          width: 45%;
+          text-decoration: none;
+        }
+
+        .info-source:hover {
+          color: #f9e3d1;
+          font-weight: lighter;
+          font-family: "Sono", sans-serif;
+          width: 45%;
+          text-decoration: none;
+          text-shadow: 0 0 0.5em rgb(7, 1, 0, 1), 0 0 0.5em #F87;
+        }
+
+
+        .groups-img{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+        }
+
+        .singer-name{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity:0;
+          text-shadow: 0 0 0.9em rgb(7, 1, 0), 0 0 0.9em #F87;
+          transition: all 200ms ease;
+        }
+
+        .singer-name:hover{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity:1;
+
+        }
+        .janis{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          color: #f9e3d1;
+          font-size: 40px;
+
+        }
+
+        .group1:hover{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          color: #f9e3d1;
+          font-size: 40px;
+
+        }
+
+
+        .group1{
+          border-radius: 50%;
+          width: 20%;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+        .srt{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          color: #f9e3d1;
+          font-size: 40px;
+        }
+        .group2{
+          border-radius: 50%;
+          border:10px;
+          width: 20%;
+          padding: 10px;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+        .joanJett{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          font-size: 40px;
+        }
+        .group3{
+          border-radius: 50%;
+          border:10px;
+          width: 20%;
+          padding: 10px;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+        .dorothy{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          font-size: 40px;
+        }
+        .group4{
+          border-radius: 50%;
+          border:10px;
+          width: 20%;
+          padding: 10px;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+
+
+        .live-rock{
+          width: 90%;
+          border-radius: 10px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 30px;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+        }
+        .footer{
+          font-size: 20px;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          color: #f9e3d1;
+          margin: 0 auto;
+          margin-top: 20px;
+          display:block;
+          text-align: center;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
