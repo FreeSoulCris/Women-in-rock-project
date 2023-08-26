@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women in RocknRoll Blog</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Righteous&family=RocknRoll+One&family=Sono:wght@200&family=Stick+No+Bills:wght@300;400;800&display=swap");
+
+        .project-week3 {
+          background: linear-gradient(
+            180.1deg,
+            rgb(3, 0, 2) 20.8%,
+            rgb(194, 50, 50) 62.7%,
+            rgb(255, 175, 123) 97.2%
+          );
+          width: 70%;
+          padding: 20px 60px;
+          margin: 0 auto;
+          border-radius: 30px;
+          border: 5px outset #f3976d;
+        }
+
+        h1 {
+          margin: 50px 0 0;
+          text-align: center;
+          color: #f9e3d1;
+          font-size: 50px;
+          font-family: "Stick No Bills", sans-serif;
+          text-shadow: 0 0 0.2em rgb(9, 2, 0), 0 0 0.2em rgb(232, 161, 150);
+        }
+
+        h2 {
+          text-align: center;
+          color: #f9e3d1;
+          font-size: 30px;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          margin-top: 5px;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+          line-height: 40px;
+        }
+
+        h3 {
+          text-align: center;
+          color: #f9e3d1;
+          font-size: 50px;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+
+        hr {
+          width: 100%;
+        }
+
+        a{
+          text-decoration: none;
+        }
+
+        button{
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+          border: 2px outset #f9e3d1;
+          background: #D9624E;
+          color: #f9e3d1;
+          font-size: 30px;
+          line-height: 22px;
+          padding: 24px 24px;
+          border-radius: 30px;
+          transition: all 200ms ease;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+          cursor: pointer;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+
+        button:hover{
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+          border: 2px outset #f9e3d1;
+          background: rgb(3, 0, 2, 0.5);
+          color: #f9e3d1;
+          font-size: 30px;
+          line-height: 22px;
+          padding: 24px 24px;
+          border-radius: 30px;
+          transition: all 200ms ease;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+          cursor:pointer;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+
+        .spotify-list {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .main-content{
+        background-color: rgb(3, 0, 2, 0.4);
+        margin: 50px auto;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+        .gif-rock{
+          margin:50px;
+          border-radius: 30px;
+          flex: 1 1 0;
+          margin: 50px;
+          width: 45%;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+          border: 3px outset #f9e3d1; border-radius: 30px"
+      }
+
+        .history-text {
+          text-align: justify;
+          color: #f9e3d1;
+          font-weight: lighter;
+          font-family: "Sono", sans-serif;
+          padding: 30px;
+          width: 45%;
+          flex: 1 1 0;
+          line-height: 25px;
+
+        }
+
+
+        .info-source {
+          color: #f9e3d1;
+          font-weight: lighter;
+          font-family: "Sono", sans-serif;
+          width: 45%;
+          text-decoration: none;
+        }
+
+        .info-source:hover {
+          color: #f9e3d1;
+          font-weight: lighter;
+          font-family: "Sono", sans-serif;
+          width: 45%;
+          text-decoration: none;
+          text-shadow: 0 0 0.5em rgb(7, 1, 0, 1), 0 0 0.5em #F87;
+        }
+
+
+        .groups-img{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+        }
+
+        .singer-name{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity:0;
+          text-shadow: 0 0 0.9em rgb(7, 1, 0), 0 0 0.9em #F87;
+          transition: all 200ms ease;
+        }
+
+        .singer-name:hover{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity:1;
+
+        }
+        .janis{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          color: #f9e3d1;
+          font-size: 40px;
+
+        }
+
+        .group1:hover{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          color: #f9e3d1;
+          font-size: 40px;
+
+        }
+
+
+        .group1{
+          border-radius: 50%;
+          width: 20%;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+        .srt{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          color: #f9e3d1;
+          font-size: 40px;
+        }
+        .group2{
+          border-radius: 50%;
+          border:10px;
+          width: 20%;
+          padding: 10px;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+        .joanJett{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          font-size: 40px;
+        }
+        .group3{
+          border-radius: 50%;
+          border:10px;
+          width: 20%;
+          padding: 10px;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+        .dorothy{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          flex: 1 1 0;
+          font-family: "Stick No Bills", sans-serif;
+          font-size: 40px;
+        }
+        .group4{
+          border-radius: 50%;
+          border:10px;
+          width: 20%;
+          padding: 10px;
+          height:200px;
+          width: 200px;
+          flex: 1 1 0;
+          border: 3px outset #f9e3d1;
+          padding: 1px;
+        }
+
+
+
+        .live-rock{
+          width: 90%;
+          border-radius: 10px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 30px;
+          box-shadow: rgb(0, 0, 0, 0.4) 0px 8px 8px 0;
+        }
+        .footer{
+          font-size: 20px;
+          font-family: "Stick No Bills", sans-serif;
+          font-weight: 200;
+          color: #f9e3d1;
+          margin: 0 auto;
+          margin-top: 20px;
+          display:block;
+          text-align: center;
+          text-shadow: 0 0 0.2em rgb(7, 1, 0), 0 0 0.2em #F87;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="project-week3">
+      <!-- Title and Subtitle-->
+      <h1>🤘🏽🎵 Women in Rock And Roll 🎵🤘🏽</h1>
+      <h2><em> -- Blog especially made for music lovers --</em></h2>
+      <div>
+        <br />
+        <br />
+
+        <!-- Section 1: Spotify playlist-->
+        <iframe
+          class="spotify-list"
+          style="border: 3px outset #f9e3d1; border-radius: 30px"
+          ;
+          src="https://open.spotify.com/embed/playlist/37i9dQZF1DXd0ZFXhY0CRF?utm_source=generator&theme=0"
+          width="90%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <br />
+        <br />
+        <hr />
+      </div>
+
+      <!-- Women Artist GIF-->
+      <div class="main-content">
+        <img
+          class="gif-rock"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/305/original/giphy_%281%29.gif?1679095167"
+          alt=""
+        />
+
+        <!--  Section 3: Main text content-->
+        <div class="history-text">
+          <p>
+            <strong>Rock and roll</strong>, also called rock ’n’ roll or rock &
+            roll, is a style of popular music that was originated in the United
+            States in the mid-1950s and that evolved by the mid-1960s into the
+            more encompassing international style known as rock music, though
+            the latter also continued to be known as rock and roll.
+          </p>
+
+          <p>
+            Rock and roll has been described as a merger of country music and
+            rhythm and blues, were that simple, it would have existed long
+            before it burst into the national consciousness. The seeds of the
+            music had been in place for decades, but they flowered in the
+            mid-1950s when nourished by a volatile mix of Black culture and
+            white spending power.
+          </p>
+
+          <p>
+            By the mid-1960s this sophistication allowed the music greater
+            freedom than ever before, and it fragmented into numerous styles
+            that became known simply as rock.
+          </p>
+
+          <p>
+            For sixty years, conventional wisdom has told us that women
+            generally did not perform rock and roll during the 1950s.
+          </p>
+
+          <p>
+            In every decade, you can find someone commenting on the absence of
+            women on the charts during rock and roll’s heyday. Others note that
+            women during that era were typically not so inclined to a wild,
+            raucous style.
+          </p>
+
+          <p>
+            The reality is, however, that hundreds — or maybe thousands — of
+            women and girls performed and recorded rock and roll in its early
+            years. And many more participated in other ways: writing songs,
+            owning or working for record labels, working as session or touring
+            musicians, designing stage wear, dancing, or managing talent — to
+            give just a few examples.
+          </p>
+
+          <a
+            class="info-source"
+            href="http://www.womeninrockproject.org/introduction/"
+            target="_blank"
+            alt="www.womeninrockproject.org"
+          >
+            <span> <em>Source: www.britannica.com</em> </span>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <!-- Sectiion 3: Artists img -->
+      <h3>-- Recommended Artists --</h3>
+
+      <div class="groups-img">
+        <div class="janis">
+          <img
+            class="group1"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/307/original/JanisJoplin.jpg?1679095247"
+            alt="JanisJoplin"
+          />
+          <div>
+            <a
+              class="singer-name"
+              href="https://open.spotify.com/artist/4NgfOZCL9Ml67xzM0xzIvC?si=RH5tHBGITUSgl8tvTe7How"
+              alt="Janis Joplin"
+              style="color: #f9e3d1"
+              target="_blank"
+            >
+              Janis Joplin</a
+            >
+          </div>
+        </div>
+
+        <div class="srt">
+          <img
+            class="group2"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/308/original/sister_roseta_tharpe.jpeg?1679095281"
+            alt="SRT"
+          />
+          <div>
+            <a
+              class="singer-name"
+              href="https://open.spotify.com/artist/2dXf5lu5iilcaTQJZodce7?si=q7Of9H7jSeeBSfJPJNEB_g"
+              alt="SRT"
+              style="color: #f9e3d1"
+              target="_blank"
+            >
+              Sister Rosetta Tharpe</a
+            >
+          </div>
+        </div>
+
+        <div class="joanJett">
+          <img
+            class="group3"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/309/original/joan-jett-1981.jpg?1679095326"
+            alt="Joan-jett"
+          />
+          <div>
+            <a
+              class="singer-name"
+              href="https://open.spotify.com/artist/1Fmb52lZ6Jv7FMWXXTPO3K?si=ZWaxgimETzSPpXrxmXRvzg"
+              alt="Joan Jett"
+              style="color: #f9e3d1"
+              target="_blank"
+            >
+              Joan Jett</a
+            >
+          </div>
+        </div>
+
+        <div class="dorothy">
+          <img
+            class="group4"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/310/original/009_dorothy.jpg?1679095354"
+            alt="Dorothy"
+          />
+          <div>
+            <a
+              class="singer-name"
+              href="https://open.spotify.com/artist/6IOvhXyk5edbA2DVaeP9Up?si=Gv_xKSmaQduY4OcXRsrKGA"
+              alt="Dorothy"
+              style="color: #f9e3d1"
+              target="_blank"
+              >Dorothy</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Sectiion 4: Button + Clousure banner + footer link-->
+
+      <button class="join-button">
+        <a href=""> </a>
+        ✨ Join our Community! ✨
+      </button>
+
+      <br />
+
+      <div>
+        <img
+          class="live-rock"
+          src="https://theusatwork.com/wp-content/uploads/2018/10/rock-roll.jpg"
+          alt="Long Live rock-roll"
+        />
+      </div>
+
+      <br />
+      <a
+        class="footer"
+        href="https://www.instagram.com/freesoulcriss/"
+        alt="instagram"
+        style="color: #f9e3d1"
+        target="_blank"
+        >Coded by: FreeSoul Criss</a
+      >
+      <br />
+    </div>
+
+    <!-- JavaScript Button Behavior -->
+
+    <script>
+      function join() {
+        let name = prompt("What is your name? 😄");
+        let nickname = prompt("What is your nickname? 😎");
+        let email = prompt(" What is your email? 📧");
+        let city = prompt("What city do you live in?");
+        let artist = prompt(
+          "Are you a singer or do you play an instrument?(answer YES or NO)"
+        );
+
+        if (artist === "YES" || artist === "Yes" || artist === "yes") {
+          alert(
+            name +
+              ", aka " +
+              nickname +
+              ", thank you for joining our community! We will keep you informed of new events and other news. 🤘🏽❤️‍🔥" +
+              " We will also put you in contact with other artists in " +
+              city +
+              "🤩"
+          );
+        } else {
+          alert(
+            name +
+              ", aka " +
+              nickname +
+              ", thank you for joining our community! We will keep you informed of new events and other news. 🤘🏽❤️‍🔥"
+          );
+        }
+      }
+
+      let joinButton = document.querySelector(".join-button");
+      joinButton.addEventListener("click", join);
+    </script>
+  </body>
+</html>
